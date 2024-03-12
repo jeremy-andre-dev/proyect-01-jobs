@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <div>
       <Head>
-        <title>Pets-proyect-job</title>
+        <title>Pets at Care | Bienestar para tu Mascota</title>
         <meta name="Pets-proyect-job" content="Pets-proyect-job" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
