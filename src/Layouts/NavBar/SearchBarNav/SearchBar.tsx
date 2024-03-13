@@ -15,28 +15,28 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="md:flex-1">
+    <div className="flex-1 ">
       <form
         onSubmit={handleSearchSubmit}
-        className="hidden items-center overflow-hidden rounded-full border px-4 md:visible md:flex"
+        className="hidden h-[3rem] items-center gap-2 overflow-hidden rounded-full border px-4 md:visible md:flex"
       >
+        <input
+          type="text"
+          placeholder="¿En qué estás interesado hoy? ..."
+          value={searchTerm}
+          onChange={handleSearchChange}
+          className="w-full  py-2 focus:outline-none"
+        />
         <div
-          className="cursor-pointer border-r-2 pr-4"
+          className="flex cursor-pointer items-center border-l-2 pr-1 pl-3"
           onClick={() =>
             alert(
               "Hey!, En estos momentos el desarrollador esta trabajando por integrar esta funcion espectacular para tu busqueda.",
             )
           }
         >
-          <LuSearch className=" text-[1.5rem] text-gray-400" />
+          <LuSearch className="text-[1.5rem] text-gray-500" />
         </div>
-        <input
-          type="text"
-          placeholder="¿En qué estás interesado hoy? ..."
-          value={searchTerm}
-          onChange={handleSearchChange}
-          className="flex-grow bg-white px-4 py-2 focus:outline-none"
-        />
       </form>
       <LuSearch className="visible text-[1.5rem] text-gray-700 md:hidden" />
     </div>
